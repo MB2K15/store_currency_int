@@ -1,0 +1,12 @@
+{
+  "table": "A",
+  "currency": "frank szwajcarski",
+  "code": "CHF",
+  "rates": [
+    {
+      "no": "034/A/NBP/2018",
+      "effectiveDate": "2018-02-16",
+      "mid": 3.6049
+    }
+  ]
+}

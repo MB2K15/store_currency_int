@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'Hello, ' + ${name} + '!'" />
+<p th:text="'YYYYY, ' + ${age} + '!'" />
+<p th:text="'RESULT, ' + ${resultm} + '!'" />
+
+
+<p>paragraph</p>
+
+<p th:text="'Current currency execute..., ' + ${currency_state} + '!'" />
+<p th:text="'Rate equals -> , ' + ${rate} + '!'" />
+
+
+<textarea rows="12"
+          style="margin-top: 1px;"  placeholder="text area test"
+          name="notes">
+</textarea>
+<br>
+<button type="submit"  value="cancel">Send message</button>
+
+
+
+</body>
+</html>

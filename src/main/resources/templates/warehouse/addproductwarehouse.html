@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+<h1 th:inline="text">Login : [[${#httpServletRequest.remoteUser}]]!</h1>
+
+<form th:action="@{/warehouse/addProduct}" method="post" enctype="multipart/form-data">
+
+
+    <table border="4">
+        <tr>
+            <td>NAME:</td>
+            <td><input name="name"/></td>
+        </tr>
+        <tr>
+            <td>CATEGORY:</td>
+            <td><input name="category"/></td>
+        </tr>
+        <tr>
+            <td>PRICE:</td>
+            <td><input name="price"/></td>
+        </tr>
+        <tr>
+            <td>QUANTITY:</td>
+            <td><input name="number"/></td>
+        </tr>
+        <tr>
+            <td>
+
+                File to upload: <input type="file" name="uploadedFile"><br/>
+                <input type="submit" value="Upload"> Press here to upload the file!
+            </td>
+        </tr>
+
+    </table>
+
+    <input type="submit" value="SAVE CART"/>
+
+</form>
+
+
+</body>
+</html>
